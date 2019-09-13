@@ -1,0 +1,14 @@
+{
+  "name": "tsc-function-name",
+  "version": "1.0.0",
+  "description": "Repro for function names being stripped by typescript compiler",
+  "license": "MIT",
+  "scripts": {
+    "test:compiled": "yarn; yarn tsc index.ts 2>&1 >/dev/null; node index.js",
+    "test:native": "yarn; node --experimental-modules index.mjs 2>/dev/null"
+  },
+  "devDependencies": {
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.6.3"
+  }
+}
