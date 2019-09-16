@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2020"
+    "target": "es2015",
+    "module": "commonjs"
   },
   "include": ["typescript.ts"]
 }

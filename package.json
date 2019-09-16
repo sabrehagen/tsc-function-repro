@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm typescript.js; rm -rf node_modules",
     "test": "yarn clean; yarn test:native; yarn test:compiled",
-    "test:compiled": "yarn; yarn tsc --project tsconfig.json; mv typescript.js typescript.mjs; node --experimental-modules typescript.mjs",
+    "test:compiled": "yarn; yarn tsc --project tsconfig.json; node typescript.js",
     "test:native": "yarn; node --experimental-modules javascript.mjs"
   },
   "devDependencies": {
